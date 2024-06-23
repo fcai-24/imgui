@@ -2092,7 +2092,7 @@ void    ImFontAtlas::ClearInputData()
         if (font_cfg.FontData && font_cfg.FontDataOwnedByAtlas)
         {
             IM_FREE(font_cfg.FontData);
-            font_cfg.FontData = NULL;
+            // font_cfg.FontData = NULL;
         }
 
     // When clearing this we lose access to the font name and other information used to build the font.
@@ -2130,9 +2130,9 @@ void    ImFontAtlas::ClearFonts()
 
 void    ImFontAtlas::Clear()
 {
-    ClearInputData();
-    ClearTexData();
-    ClearFonts();
+    // ClearInputData();
+//     ClearTexData();
+  //   ClearFonts();
 }
 
 void    ImFontAtlas::GetTexDataAsAlpha8(unsigned char** out_pixels, int* out_width, int* out_height, int* out_bytes_per_pixel)
